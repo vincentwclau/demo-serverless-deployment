@@ -1,6 +1,6 @@
 // TODO: replace with your Railway deployment URL before going live
 // const BASE_URL = 'https://xxxxxx.up.railway.app';
-const BASE_URL = 'http://localhost:8080';
+const BASE_URL = 'http://demo-serverless-deployment-production.up.railway.app';
 
 async function getAllApplications(page = 0, size = 7) {
   const url = `${BASE_URL}/api/applications?page=${page}&size=${size}&sort=createdAt,desc`;
