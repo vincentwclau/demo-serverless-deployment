@@ -9,7 +9,7 @@ async function getAllApplications(page = 0, size = 7) {
 }
 
 async function submitApplication(data) {
-  const res = await fetch(`${BASE_URL}/api/applications`, {
+  const res = await fetch(`${BASE_URL}/api/application`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data),
