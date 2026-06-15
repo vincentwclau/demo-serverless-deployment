@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply — HKLIS 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-title">HK Leadership &amp; Innovation Summit</span>
+        <span class="logo-sub">Hong Kong &nbsp;·&nbsp; 2026</span>
+      </div>
+      <nav class="header-nav">
+        <a href="index.html" class="nav-link">← Back to Applications</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="page-header">
+      <div class="container">
+        <h1>Application Form</h1>
+        <p>Complete all required fields to submit your application for HKLIS 2026.</p>
+      </div>
+    </div>
+
+    <section class="form-section">
+      <div class="container">
+        <div class="form-card card">
+
+          <div id="alert-success" class="alert alert-success">
+            ✓&nbsp; Your application has been submitted successfully. Redirecting…
+          </div>
+          <div id="alert-error" class="alert alert-error">
+            ✕&nbsp; <span id="alert-error-msg">Failed to submit application. Please try again.</span>
+          </div>
+
+          <form id="apply-form" novalidate>
+
+            <!-- ── Personal Information ── -->
+            <p class="form-group-header">Personal Information</p>
+
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="fullName">Full Name <span class="required">*</span></label>
+                <input type="text" id="fullName" name="fullName" placeholder="As per HKID / Passport" autocomplete="name" required>
+                <span class="field-error" id="fullName-error"></span>
+              </div>
+              <div class="form-field">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+                <span class="field-error" id="email-error"></span>
+              </div>
+              <div class="form-field">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+852 " autocomplete="tel">
+              </div>
+              <div class="form-field">
+                <label for="dateOfBirth">Date of Birth</label>
+                <input type="date" id="dateOfBirth" name="dateOfBirth">
+              </div>
+            </div>
+
+            <div class="form-field" style="margin-bottom:20px">
+              <label>Gender <span class="required">*</span></label>
+              <div class="radio-group">
+                <label class="radio-option">
+                  <input type="radio" name="gender" value="Male">
+                  <span class="radio-label">Male</span>
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="gender" value="Female">
+                  <span class="radio-label">Female</span>
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="gender" value="Prefer not to say">
+                  <span class="radio-label">Prefer not to say</span>
+                </label>
+              </div>
+              <span class="field-error" id="gender-error"></span>
+            </div>
+
+            <!-- ── Professional Background ── -->
+            <p class="form-group-header">Professional Background</p>
+
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="occupation">Occupation <span class="required">*</span></label>
+                <select id="occupation" name="occupation" required>
+                  <option value="">— Select —</option>
+                  <option value="Student">Student</option>
+                  <option value="Working Professional">Working Professional</option>
+                  <option value="Academic">Academic / Researcher</option>
+                  <option value="Entrepreneur">Entrepreneur</option>
+                  <option value="Other">Other</option>
+                </select>
+                <span class="field-error" id="occupation-error"></span>
+              </div>
+              <div class="form-field">
+                <label for="industry">Industry</label>
+                <select id="industry" name="industry">
+                  <option value="">— Select —</option>
+                  <option value="Finance">Finance &amp; Banking</option>
+                  <option value="Technology">Technology</option>
+                  <option value="Healthcare">Healthcare</option>
+                  <option value="Education">Education</option>
+                  <option value="Legal">Legal &amp; Compliance</option>
+                  <option value="Real Estate">Real Estate</option>
+                  <option value="Government">Government &amp; Public Sector</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- ── Session Preferences ── -->
+            <p class="form-group-header">Session Preferences</p>
+
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="seminarSession">Preferred Session <span class="required">*</span></label>
+                <select id="seminarSession" name="seminarSession" required>
+                  <option value="">— Select —</option>
+                  <option value="Morning Session">Morning Session (09:00 – 12:30)</option>
+                  <option value="Afternoon Session">Afternoon Session (14:00 – 17:30)</option>
+                  <option value="Evening Session">Evening Session (19:00 – 21:30)</option>
+                </select>
+                <span class="field-error" id="seminarSession-error"></span>
+              </div>
+              <div class="form-field">
+                <label for="source">How did you hear about us?</label>
+                <select id="source" name="source">
+                  <option value="">— Select —</option>
+                  <option value="LinkedIn">LinkedIn</option>
+                  <option value="Email">Email Newsletter</option>
+                  <option value="Referral">Referral</option>
+                  <option value="Social Media">Social Media</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-field" style="margin-bottom:20px">
+              <label>Dietary Requirements</label>
+              <div class="radio-group">
+                <label class="radio-option">
+                  <input type="radio" name="dietaryRequirement" value="No Preference" checked>
+                  <span class="radio-label">No Preference</span>
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="dietaryRequirement" value="Vegetarian">
+                  <span class="radio-label">Vegetarian</span>
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="dietaryRequirement" value="Vegan">
+                  <span class="radio-label">Vegan</span>
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="dietaryRequirement" value="Halal">
+                  <span class="radio-label">Halal</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- ── Additional Information ── -->
+            <p class="form-group-header">Additional Information</p>
+
+            <div class="form-field" style="margin-bottom:24px">
+              <label for="remarks">Remarks / Special Requirements</label>
+              <textarea id="remarks" name="remarks" placeholder="Any additional information you'd like to share with the organiser…"></textarea>
+            </div>
+
+            <div class="checkbox-field" style="margin-bottom:8px">
+              <input type="checkbox" id="agreedToTerms" name="agreedToTerms">
+              <label for="agreedToTerms">
+                I confirm that the information provided is accurate, and I agree to the
+                <a href="#">Terms &amp; Conditions</a> and <a href="#">Privacy Policy</a>
+                of the Hong Kong Leadership &amp; Innovation Summit 2026.
+              </label>
+            </div>
+            <span class="field-error" id="terms-error"></span>
+
+            <div class="form-actions">
+              <a href="index.html" class="btn btn-ghost">Cancel</a>
+              <button type="submit" id="submit-btn" class="btn btn-primary btn-submit">Submit Application</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    &copy; 2026 <span>HK Leadership &amp; Innovation Summit</span>. All rights reserved.
+  </footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/apply.js"></script>
+</body>
+</html>

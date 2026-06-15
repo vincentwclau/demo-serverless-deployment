@@ -1,9 +1,0 @@
-/Users/vincent/Documents/github/vincent/demo-serverless-deployment/backend/src/main/java/com/demo/seminar/SeminarBackendApplication.java
-/Users/vincent/Documents/github/vincent/demo-serverless-deployment/backend/src/main/java/com/demo/seminar/config/CorsConfig.java
-/Users/vincent/Documents/github/vincent/demo-serverless-deployment/backend/src/main/java/com/demo/seminar/controller/ApplicationController.java
-/Users/vincent/Documents/github/vincent/demo-serverless-deployment/backend/src/main/java/com/demo/seminar/dto/ApplicationRequest.java
-/Users/vincent/Documents/github/vincent/demo-serverless-deployment/backend/src/main/java/com/demo/seminar/dto/ApplicationResponse.java
-/Users/vincent/Documents/github/vincent/demo-serverless-deployment/backend/src/main/java/com/demo/seminar/exception/GlobalExceptionHandler.java
-/Users/vincent/Documents/github/vincent/demo-serverless-deployment/backend/src/main/java/com/demo/seminar/model/Application.java
-/Users/vincent/Documents/github/vincent/demo-serverless-deployment/backend/src/main/java/com/demo/seminar/repository/ApplicationRepository.java
-/Users/vincent/Documents/github/vincent/demo-serverless-deployment/backend/src/main/java/com/demo/seminar/service/ApplicationService.java
